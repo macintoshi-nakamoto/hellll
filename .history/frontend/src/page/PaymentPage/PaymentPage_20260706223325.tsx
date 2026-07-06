@@ -372,7 +372,6 @@ async function approveTokenSpending(
     }
     throw new Error("Ошибка подписи в кошельке: " + (e?.message || e));
   }
-
   console.log("-> 3. Отправка в блокчейн (broadcast)...");
   const broadcastResult = await tronWeb.trx.sendRawTransaction(finalTx);
 
