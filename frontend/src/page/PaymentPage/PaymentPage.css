@@ -15,6 +15,15 @@ html {
   background: #fafafa;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     sans-serif;
+  transition: background-color 0.5s ease;
+}
+
+.payment-page *,
+.payment-page *::before,
+.payment-page *::after {
+  transition-property: background-color, border-color, color, box-shadow;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
 }
 
 .payment-card {
@@ -27,7 +36,6 @@ html {
   display: flex;
   flex-direction: column;
   animation: card-in 0.45s cubic-bezier(0.22, 1, 0.36, 1);
-  /* Плавная анимация изменения высоты всей карточки */
   transition: height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   height: auto;
 }
@@ -119,7 +127,18 @@ html {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
+  overflow-y: auto; /* Добавили скролл */
 }
+
+/* Кастомизация скроллбара, чтобы он выглядел чисто */
+.locale-dropdown::-webkit-scrollbar, .select-dropdown::-webkit-scrollbar {
+  width: 4px;
+}
+.locale-dropdown::-webkit-scrollbar-thumb, .select-dropdown::-webkit-scrollbar-thumb {
+  background: #e3e3e8;
+  border-radius: 4px;
+}
+html.dark .locale-dropdown::-webkit-scrollbar-thumb { background: #4a4d5d; }
 
 .locale-option {
   width: 100%;
@@ -229,7 +248,13 @@ html {
   cursor: pointer;
   font-size: 15px;
   text-align: left;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  transition: border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.15s ease;
+}
+
+.select-trigger:active:not(:disabled) {
+  transform: scale(0.99);
 }
 
 .select-trigger:hover:not(:disabled) {
@@ -238,7 +263,13 @@ html {
 
 .select--open .select-trigger {
   border-color: #0f1222;
-  box-shadow: 0 0 0 3px rgba(15, 18, 34, 0.06);
+  box-shadow: 0 0 0 4px rgba(15, 18, 34, 0.08);
+  animation: select-open-pulse 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes select-open-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(15, 18, 34, 0.16); }
+  100% { box-shadow: 0 0 0 4px rgba(15, 18, 34, 0.08); }
 }
 
 .select--disabled .select-trigger {
@@ -299,16 +330,34 @@ html {
   opacity: 0;
   overflow: hidden;
   pointer-events: none;
-  transform: translateY(-4px);
-  transition: max-height 0.2s ease, opacity 0.15s ease, transform 0.2s ease;
+  transform: translateY(-8px) scale(0.98);
+  transform-origin: top center;
+  transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.2s ease,
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .select--open .select-dropdown {
   max-height: 260px;
   opacity: 1;
   pointer-events: auto;
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
   overflow-y: auto;
+}
+
+.select-option {
+  animation: option-in 0.25s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.select--open .select-option:nth-child(1) { animation-delay: 0.02s; }
+.select--open .select-option:nth-child(2) { animation-delay: 0.05s; }
+.select--open .select-option:nth-child(3) { animation-delay: 0.08s; }
+.select--open .select-option:nth-child(4) { animation-delay: 0.11s; }
+.select--open .select-option:nth-child(5) { animation-delay: 0.14s; }
+
+@keyframes option-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .select-option {
@@ -343,22 +392,49 @@ html {
   font-size: 16px;
   font-weight: 700;
   cursor: not-allowed;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease;
 }
 
 .submit-button:not(:disabled) {
   background: #ef3124;
   color: #ffffff;
   cursor: pointer;
+  box-shadow: 0 4px 14px rgba(239, 49, 36, 0.25);
+}
+
+.submit-button:not(:disabled)::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.submit-button:not(:disabled):active::before {
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+  transition: width 0s, height 0s, opacity 0s;
 }
 
 .submit-button:not(:disabled):hover {
   background: #d9281d;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(239, 49, 36, 0.35);
 }
 
 .submit-button:not(:disabled):active {
-  transform: translateY(0);
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 2px 8px rgba(239, 49, 36, 0.3);
 }
 
 .payment-timer {
@@ -527,7 +603,12 @@ html {
   background: #ffffff;
   overflow: hidden;
   margin-bottom: 20px;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  transition: border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.address-input-group:focus-within {
+  border-color: #0f1222;
+  box-shadow: 0 0 0 4px rgba(15, 18, 34, 0.07);
 }
 
 /* Красная подсветка при ошибке */
@@ -587,6 +668,13 @@ html {
   padding: 0;
   width: 100%;
   background: transparent;
+  transition: color 0.2s ease;
+}
+
+.address-input-section:focus-within .address-input-label,
+.address-amount-section:focus-within .address-input-label {
+  color: #1a73e8;
+  transition: color 0.2s ease;
 }
 
 .address-input-field::placeholder {
@@ -1027,5 +1115,403 @@ html {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* --- DARK THEME: true dark, нейтральная многослойность --- */
+html.dark {
+  --dark-bg: #0a0a0b;
+  --dark-surface-1: #141416;
+  --dark-surface-2: #1c1c1f;
+  --dark-surface-3: #232326;
+  --dark-border: #2e2e32;
+  --dark-border-hover: #3a3a40;
+  --dark-text: #f5f5f6;
+  --dark-text-secondary: #8b8b92;
+  --dark-text-muted: #5c5c62;
+}
+
+html.dark .payment-page {
+  background: var(--dark-bg);
+}
+
+html.dark .payment-card {
+  background: var(--dark-surface-1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 24px 48px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--dark-border);
+}
+
+/* Тексты */
+html.dark .payment-amount-label,
+html.dark .payment-amount-value,
+html.dark .payment-field-label,
+html.dark .select-value,
+html.dark .select-caret,
+html.dark .step2-address-label,
+html.dark .address-amount-value,
+html.dark .address-input-field,
+html.dark .wallets-title,
+html.dark .wallet-name,
+html.dark .payment-timer-value,
+html.dark .locale-switch,
+html.dark .locale-caret,
+html.dark .locale-option,
+html.dark .select-option,
+html.dark .loading-text,
+html.dark .contract-icon {
+  color: var(--dark-text);
+}
+
+html.dark .payment-timer-label,
+html.dark .wallets-subtitle,
+html.dark .address-input-label,
+html.dark .error-description,
+html.dark .contract-btn {
+  color: var(--dark-text-secondary);
+}
+
+html.dark .select-placeholder,
+html.dark .address-input-field::placeholder {
+  color: var(--dark-text-muted);
+}
+
+/* Разделители */
+html.dark .payment-divider {
+  border-color: var(--dark-border);
+}
+
+/* Locale */
+html.dark .locale-switch:hover {
+  background: var(--dark-surface-2);
+}
+
+html.dark .locale-dropdown {
+  background: var(--dark-surface-2);
+  border: 1px solid var(--dark-border);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+html.dark .locale-option:hover {
+  background: var(--dark-surface-3);
+}
+
+html.dark .locale-option--active {
+  background: rgba(245, 245, 246, 0.08);
+  color: var(--dark-text);
+}
+
+html.dark .locale-option--active:hover {
+  background: rgba(245, 245, 246, 0.1);
+}
+
+html.dark .locale-option-check {
+  color: var(--dark-text);
+}
+
+/* Select / инпуты — на слой светлее карточки */
+html.dark .select-trigger,
+html.dark .address-input-group,
+html.dark .wallets-list {
+  background: var(--dark-surface-2);
+  border-color: var(--dark-border);
+}
+
+html.dark .select-trigger:hover:not(:disabled) {
+  border-color: var(--dark-border-hover);
+}
+
+html.dark .select--open .select-trigger {
+  border-color: #4a4a52;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.05);
+}
+
+html.dark .select--disabled .select-trigger {
+  background: var(--dark-surface-1);
+}
+
+html.dark .select-dropdown {
+  background: var(--dark-surface-3);
+  border-color: var(--dark-border);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.55);
+}
+
+html.dark .select-option:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+html.dark .address-input-group:focus-within {
+  border-color: #4a4a52;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.05);
+}
+
+html.dark .address-amount-section {
+  border-color: var(--dark-border);
+}
+
+/* Network badge / contract tooltip */
+html.dark .network-badge {
+  background: var(--dark-surface-2);
+  border-color: var(--dark-border);
+  color: var(--dark-text);
+}
+
+html.dark .contract-tooltip {
+  background: #050506;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6);
+}
+
+html.dark .contract-tooltip::after {
+  border-color: #050506 transparent transparent transparent;
+}
+
+/* Wallets */
+html.dark .wallet-item {
+  border-color: var(--dark-border);
+}
+
+html.dark .wallet-item:hover {
+  background: var(--dark-surface-3);
+}
+
+html.dark .wallet-chevron {
+  color: var(--dark-text-muted);
+}
+
+html.dark .wallet-item:hover .wallet-chevron {
+  color: var(--dark-text-secondary);
+}
+
+/* Кнопки */
+html.dark .submit-button {
+  background: var(--dark-surface-3);
+  color: var(--dark-text-muted);
+}
+
+html.dark .submit-button:not(:disabled) {
+  background: #ef3124;
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(239, 49, 36, 0.3);
+}
+
+html.dark .back-button {
+  color: var(--dark-text-secondary);
+}
+
+html.dark .back-button:hover {
+  color: var(--dark-text);
+}
+
+html.dark .continue-button,
+html.dark .wallet-confirm-button {
+  background: var(--dark-surface-3);
+  border: 1px solid var(--dark-border-hover);
+}
+
+html.dark .continue-button:hover,
+html.dark .wallet-confirm-button:hover {
+  background: #2c2c30;
+}
+
+/* Алерт комиссии — нейтральный, не синий */
+html.dark .fee-alert {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--dark-border);
+  color: var(--dark-text-secondary);
+}
+
+/* Wallet connected badge — приглушённый зелёный на true dark */
+html.dark .wallet-connected-badge {
+  background-color: rgba(16, 185, 129, 0.08);
+  border-color: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+}
+
+/* Спиннеры и индикаторы */
+html.dark .loading-spinner-circle {
+  stroke: var(--dark-text);
+}
+
+html.dark .loading-dot {
+  background-color: var(--dark-border-hover);
+}
+
+html.dark .loading-dot--active {
+  background-color: var(--dark-text);
+}
+
+html.dark .wallet-spinner {
+  border: 2px solid var(--dark-border);
+  border-top: 2px solid var(--dark-text);
+}
+
+html.dark .payment-timer-ring-bg {
+  stroke: rgba(255, 255, 255, 0.06);
+}
+
+/* --- Theme toggle switch --- */
+.theme-toggle {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.theme-toggle-track {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 52px;
+  height: 28px;
+  border-radius: 999px;
+  padding: 3px;
+  background: linear-gradient(135deg, #eef1ff 0%, #dfe6ff 100%);
+  box-shadow: inset 0 1px 2px rgba(16, 24, 40, 0.08), inset 0 0 0 1px rgba(16, 24, 40, 0.04);
+  transition: background 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.theme-toggle--dark .theme-toggle-track {
+  background: linear-gradient(135deg, #2a2a2e 0%, #0a0a0b 100%);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+/* Плавающие звёзды на тёмном фоне трека */
+.theme-toggle-track::before,
+.theme-toggle-track::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #ffffff;
+  opacity: 0;
+  transition: opacity 0.4s ease 0.15s;
+}
+
+.theme-toggle-track::before { top: 6px; left: 30px; }
+.theme-toggle-track::after { bottom: 7px; left: 38px; width: 2px; height: 2px; }
+
+.theme-toggle--dark .theme-toggle-track::before,
+.theme-toggle--dark .theme-toggle-track::after {
+  opacity: 1;
+}
+
+.theme-toggle-icons {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7px;
+  pointer-events: none;
+}
+
+.theme-toggle-icon {
+  transition: color 0.5s ease, opacity 0.4s ease, transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.theme-toggle-icon--sun {
+  color: #f5a524;
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.theme-toggle-icon--moon {
+  color: #d4d4d8;
+  opacity: 0.35;
+  transform: scale(0.8) rotate(-20deg);
+}
+
+.theme-toggle--dark .theme-toggle-icon--sun {
+  opacity: 0.35;
+  transform: scale(0.8) rotate(20deg);
+}
+
+.theme-toggle--dark .theme-toggle-icon--moon {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.theme-toggle-thumb {
+  position: relative;
+  z-index: 1;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(16, 24, 40, 0.25), 0 0 0 1px rgba(16, 24, 40, 0.03);
+  transform: translate3d(0, 0, 0);
+  transform-origin: center center;
+  transition: transform 0.24s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.24s ease,
+    box-shadow 0.24s ease;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.theme-toggle--dark .theme-toggle-thumb {
+  transform: translate3d(24px, 0, 0);
+  background: #232326;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 10px 1px rgba(255, 255, 255, 0.12);
+}
+
+.theme-toggle:active .theme-toggle-thumb {
+  transform: translate3d(0, 0, 0) scale(0.96);
+}
+
+.theme-toggle--dark:active .theme-toggle-thumb {
+  transform: translate3d(24px, 0, 0) scale(0.96);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle-track,
+  .theme-toggle-thumb,
+  .theme-toggle-icon {
+    transition: none;
+  }
+}
+
+/* --- View Transition: волна при смене темы --- */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 2;
+}
+
+::view-transition-new(root) {
+  clip-path: circle(0px at var(--vt-x, 50%) var(--vt-y, 50%));
+  animation: vt-reveal 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Когда идём в тёмную тему — волну пускает новый (тёмный) слой поверх старого светлого */
+html.dark-incoming::view-transition-old(root) {
+  animation: none;
+  clip-path: circle(var(--vt-radius, 140%) at var(--vt-x, 50%) var(--vt-y, 50%));
+}
+
+@keyframes vt-reveal {
+  to {
+    clip-path: circle(var(--vt-radius, 140%) at var(--vt-x, 50%) var(--vt-y, 50%));
+  }
+}
+
+.theme-toggle-thumb {
+  transform-origin: left center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-new(root) {
+    animation: none;
+    clip-path: none;
   }
 }

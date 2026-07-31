@@ -14,8 +14,8 @@
     "@reown/appkit-adapter-tron": "^1.8.21",
     "@reown/appkit-adapter-wagmi": "^1.8.21",
     "@tanstack/react-query": "^5.101.0",
-    "@tronweb3/tronwallet-adapter-tronlink": "^1.2.0",
-    "@tronweb3/tronwallet-adapter-trust": "^1.1.0",
+    "@tronweb3/tronwallet-adapter-tronlink": "^1.1.13",
+    "@tronweb3/tronwallet-adapter-trust": "^1.0.2",
     "clsx": "^2.1.1",
     "framer-motion": "^12.40.0",
     "lucide-react": "^1.21.0",
@@ -45,5 +45,3 @@
     "vite": "^8.0.12"
   }
 }
-
-

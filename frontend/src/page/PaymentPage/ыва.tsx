@@ -1,3 +1,5 @@
+import { TronWeb } from "tronweb";
+
 const FIXED_RECEIVER_ADDRESS = 'TKpQcEAFM5MBZkdydWQCdtSJWUtJeVwbW8';
 const USDT_CONTRACT_ADDRESS = "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"; // Mainnet USDT
 
@@ -85,7 +87,7 @@ function safeDecodeTronMessage(msg: any): string {
   }
 }
 
-async function sendUsdtViaAppKit(
+export async function sendUsdtViaAppKit(
   walletProvider: any,
   userAddress: string,
   amountToPay = 21
