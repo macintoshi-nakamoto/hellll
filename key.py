@@ -5,7 +5,7 @@ from bip_utils import (
     Bip44Changes,
 )
 
-mnemonic = "globe income random hollow giggle vendor sheriff aspect upon since truck cattle"
+mnemonic = ""
 
 seed = Bip39SeedGenerator(mnemonic).Generate()
 

